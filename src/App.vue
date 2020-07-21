@@ -1,33 +1,29 @@
 <template>
     <div class="appContainer">
         <!--顶部区域-->
-        <mt-header fixed title="第一个商城项目">
-            <router-link to="/" slot="left">
-                <mt-button icon="back">返回</mt-button>
-            </router-link>
-        </mt-header>
+        <mt-header fixed title="第一个商城项目"/>
 
         <!--中间路由组件-->
-        <router-view></router-view>
+        <router-view/>
 
         <!--底部导航栏-->
         <nav class="mui-bar mui-bar-tab">
-            <a class="mui-tab-item" href="#tabbar">
-                <span class="mui-icon mui-icon-home"></span>
+            <router-link class="mui-tab-item" to="/home">
+                <span class="mui-icon mui-icon-home"/>
                 <span class="mui-tab-label">首页</span>
-            </a>
-            <a class="mui-tab-item mui-active" href="#tabbar-with-chat">
-                <span class="mui-icon mui-icon-contact"><span class="mui-badge">1</span></span>
+            </router-link>
+            <router-link class="mui-tab-item" to="/member">
+                <span class="mui-icon mui-icon-contact"/>
                 <span class="mui-tab-label">会员</span>
-            </a>
-            <a class="mui-tab-item" href="#tabbar-with-contact">
-                <span class="mui-icon mui-icon-email"></span>
+            </router-link>
+            <router-link class="mui-tab-item" to="/shopCar">
+                <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">0</span></span>
                 <span class="mui-tab-label">购物车</span>
-            </a>
-            <a class="mui-tab-item" href="#tabbar-with-map">
-                <span class="mui-icon mui-icon-gear"></span>
+            </router-link>
+            <router-link class="mui-tab-item" to="/search">
+                <span class="mui-icon mui-icon-search"/>
                 <span class="mui-tab-label">搜索</span>
-            </a>
+            </router-link>
         </nav>
     </div>
 </template>
