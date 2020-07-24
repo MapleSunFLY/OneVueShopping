@@ -6,7 +6,7 @@ import VueRouter from 'vue-router'
 //安装 vue-router 路由
 Vue.use(VueRouter);
 
-//导入 vue-resource 网络请求
+//导入 vue-resource
 import VueResource from 'vue-resource'
 //安装 vue-resource 网络请求
 Vue.use(VueResource);

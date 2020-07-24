@@ -7,7 +7,8 @@ import SearchContainer from "./components/main/SearchContainer.vue";
 
 const router = new VueRouter({
     routes: [//配置路由规则
-        {path: '/', component: HomeContainer},
+        {path: '/', redirect: '/home'},
+        {path: '/home', component: HomeContainer},
         {path: '/member', component: MemberContainer},
         {path: '/shopCar', component: ShopCarContainer},
         {path: '/search', component: SearchContainer},
